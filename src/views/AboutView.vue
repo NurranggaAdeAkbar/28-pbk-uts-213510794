@@ -9,6 +9,7 @@ Terima kasih telah memilih aplikasi kami sebagai solusi teknologi untuk aktivita
 </template>
 <style>
 .yi{
+  /* eslint-disable no-irregular-whitespace */
   display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
@@ -24,12 +25,11 @@ Terima kasih telah memilih aplikasi kami sebagai solusi teknologi untuk aktivita
   justify-content: center;
   height: 50vh;
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
+  background-color: #f2f2f2;
   max-width: 800px;
     margin: 0 auto;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 3px 5px rgba(0,0,0,.1);
-/* eslint-disable */
 }
 </style>
