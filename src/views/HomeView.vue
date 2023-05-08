@@ -15,6 +15,5 @@
   justify-content: center;
   height: 50vh;
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
   }
 </style>
