@@ -8,7 +8,6 @@
 
 </script>
 <style>
-/* eslint-disable no-irregular-whitespace */
 .yo{
   display: flex;
   flex-direction: column;
@@ -16,7 +15,6 @@
   justify-content: center;
   height: 50vh;
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
-/* eslint-disable */
+  background-color: #f2f2f2;
   }
 </style>
