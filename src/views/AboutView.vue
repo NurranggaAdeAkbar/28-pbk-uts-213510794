@@ -24,7 +24,6 @@ Terima kasih telah memilih aplikasi kami sebagai solusi teknologi untuk aktivita
   justify-content: center;
   height: 50vh;
   font-family: Arial, sans-serif;
-  background-color: #f2f2f2;
   max-width: 800px;
     margin: 0 auto;
     padding: 20px;
