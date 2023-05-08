@@ -9,7 +9,6 @@ Terima kasih telah memilih aplikasi kami sebagai solusi teknologi untuk aktivita
 </template>
 <style>
 .yi{
-  /* eslint-disable no-irregular-whitespace */
   display: block;
     margin-block-start: 1em;
     margin-block-end: 1em;
