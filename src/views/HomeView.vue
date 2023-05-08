@@ -8,6 +8,7 @@
 
 </script>
 <style>
+/* eslint-disable no-irregular-whitespace */
 .yo{
   display: flex;
   flex-direction: column;
