@@ -1,6 +1,9 @@
 <template>
   <div>
     <h1>TO-DO LIST</h1>
+    <router-link to="/">Home<router-link>
+    <router-link :to="{ name : 'About' }">About<router-link>
+    <router-link :to="{ name : 'Jobs' }">Jobs<router-link>
     <form @submit.prevent="addActivity">
       <input type="text" v-model="newActivity" placeholder="Add activity...">
       <button>Add</button>
@@ -17,6 +20,12 @@
       <input type="checkbox" v-model="showUnfinished">
     </div>
   </div>
+
+  <button @click="redirect">Redirect</button>
+  <button @click="back">Go Back</button>
+  <button @click="forward">Go Forward</button>
+
+  <router-view/>
 </template>
 
 <script>
@@ -33,6 +42,16 @@ export default {
     }
   },
   methods: {
+    redirect() {
+      this.$router.push({ name: 'Home' })
+    },
+    back() {
+      this.$router.go(-1)
+    },
+    forward() {
+      this.$router.go(1)
+    },
+
     addActivity() {
       if (this.newActivity.trim() !== '') {
         this.activities.push({ text: this.newActivity, completed: false });
@@ -59,6 +78,20 @@ export default {
 .done {
   text-decoration: line-through;
 }
+#nav {
+  padding: 30px
+}
+#nav a { 
+  font-weight: bold;
+  color : #2c3e50;
+  text-decoration : none;
+}
+#nav a.router-link-exact-active {
+  color :  white;
+  background : crimson;
+  padding : 10px;
+  border-radius : 4px;
+}
 </style>
 <style>
 body {
@@ -78,5 +111,11 @@ h1 {
 }
 .kamu {
   color: white;
+}
+button{
+  margin: 0 10px;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
 }
 </style>
